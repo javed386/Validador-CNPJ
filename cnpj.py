@@ -31,10 +31,6 @@ def segundo_digito(cnpj):
     return encontrar_valor(cnpj_copia, multiplicadores, 13)
     
 def verificacao(cnpj,segundo_digito, primeiro_digito):
-    print(cnpj[-2])
-    print(primeiro_digito)
-    print(cnpj[-1])
-    print(segundo_digito)
     if int(cnpj[-2]) == int(primeiro_digito) and int(cnpj[-1]) == int(segundo_digito):
         print('Seu CNPJ é válido')
     else:
